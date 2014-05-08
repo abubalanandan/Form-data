@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7080D6E8191C0ACD00DC4040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6E7191C0ACD00DC4040 /* Foundation.framework */; };
+		7080D6EA191C0ACD00DC4040 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6E9191C0ACD00DC4040 /* CoreGraphics.framework */; };
+		7080D6EC191C0ACD00DC4040 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6EB191C0ACD00DC4040 /* UIKit.framework */; };
+		7080D6F2191C0ACD00DC4040 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7080D6F0191C0ACD00DC4040 /* InfoPlist.strings */; };
+		7080D6F4191C0ACD00DC4040 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080D6F3191C0ACD00DC4040 /* main.m */; };
+		7080D6F8191C0ACD00DC4040 /* ELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080D6F7191C0ACD00DC4040 /* ELAppDelegate.m */; };
+		7080D6FB191C0ACD00DC4040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080D6F9191C0ACD00DC4040 /* Main.storyboard */; };
+		7080D6FE191C0ACD00DC4040 /* ELFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080D6FD191C0ACD00DC4040 /* ELFirstViewController.m */; };
+		7080D701191C0ACD00DC4040 /* ELSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080D700191C0ACD00DC4040 /* ELSecondViewController.m */; };
+		7080D703191C0ACD00DC4040 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7080D702191C0ACD00DC4040 /* Images.xcassets */; };
+		7080D70A191C0ACD00DC4040 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D709191C0ACD00DC4040 /* XCTest.framework */; };
+		7080D70B191C0ACD00DC4040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6E7191C0ACD00DC4040 /* Foundation.framework */; };
+		7080D70C191C0ACD00DC4040 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6EB191C0ACD00DC4040 /* UIKit.framework */; };
+		7080D714191C0ACD00DC4040 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7080D712191C0ACD00DC4040 /* InfoPlist.strings */; };
+		7080D716191C0ACD00DC4040 /* EspressoLaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080D715191C0ACD00DC4040 /* EspressoLaneTests.m */; };
+		7080D724191C13C500DC4040 /* espresso_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7080D723191C13C500DC4040 /* espresso_logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7080D70D191C0ACD00DC4040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7080D6DC191C0ACD00DC4040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7080D6E3191C0ACD00DC4040;
+			remoteInfo = EspressoLane;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7080D6E4191C0ACD00DC4040 /* EspressoLane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EspressoLane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7080D6E7191C0ACD00DC4040 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7080D6E9191C0ACD00DC4040 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7080D6EB191C0ACD00DC4040 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7080D6EF191C0ACD00DC4040 /* EspressoLane-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EspressoLane-Info.plist"; sourceTree = "<group>"; };
+		7080D6F1191C0ACD00DC4040 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7080D6F3191C0ACD00DC4040 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7080D6F5191C0ACD00DC4040 /* EspressoLane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EspressoLane-Prefix.pch"; sourceTree = "<group>"; };
+		7080D6F6191C0ACD00DC4040 /* ELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAppDelegate.h; sourceTree = "<group>"; };
+		7080D6F7191C0ACD00DC4040 /* ELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAppDelegate.m; sourceTree = "<group>"; };
+		7080D6FA191C0ACD00DC4040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7080D6FC191C0ACD00DC4040 /* ELFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFirstViewController.h; sourceTree = "<group>"; };
+		7080D6FD191C0ACD00DC4040 /* ELFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFirstViewController.m; sourceTree = "<group>"; };
+		7080D6FF191C0ACD00DC4040 /* ELSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELSecondViewController.h; sourceTree = "<group>"; };
+		7080D700191C0ACD00DC4040 /* ELSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELSecondViewController.m; sourceTree = "<group>"; };
+		7080D702191C0ACD00DC4040 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7080D708191C0ACD00DC4040 /* EspressoLaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EspressoLaneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7080D709191C0ACD00DC4040 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7080D711191C0ACD00DC4040 /* EspressoLaneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EspressoLaneTests-Info.plist"; sourceTree = "<group>"; };
+		7080D713191C0ACD00DC4040 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7080D715191C0ACD00DC4040 /* EspressoLaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspressoLaneTests.m; sourceTree = "<group>"; };
+		7080D723191C13C500DC4040 /* espresso_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = espresso_logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7080D6E1191C0ACD00DC4040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7080D6EA191C0ACD00DC4040 /* CoreGraphics.framework in Frameworks */,
+				7080D6EC191C0ACD00DC4040 /* UIKit.framework in Frameworks */,
+				7080D6E8191C0ACD00DC4040 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7080D705191C0ACD00DC4040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7080D70A191C0ACD00DC4040 /* XCTest.framework in Frameworks */,
+				7080D70C191C0ACD00DC4040 /* UIKit.framework in Frameworks */,
+				7080D70B191C0ACD00DC4040 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7080D6DB191C0ACD00DC4040 = {
+			isa = PBXGroup;
+			children = (
+				7080D6ED191C0ACD00DC4040 /* EspressoLane */,
+				7080D70F191C0ACD00DC4040 /* EspressoLaneTests */,
+				7080D6E6191C0ACD00DC4040 /* Frameworks */,
+				7080D6E5191C0ACD00DC4040 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7080D6E5191C0ACD00DC4040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7080D6E4191C0ACD00DC4040 /* EspressoLane.app */,
+				7080D708191C0ACD00DC4040 /* EspressoLaneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7080D6E6191C0ACD00DC4040 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7080D6E7191C0ACD00DC4040 /* Foundation.framework */,
+				7080D6E9191C0ACD00DC4040 /* CoreGraphics.framework */,
+				7080D6EB191C0ACD00DC4040 /* UIKit.framework */,
+				7080D709191C0ACD00DC4040 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7080D6ED191C0ACD00DC4040 /* EspressoLane */ = {
+			isa = PBXGroup;
+			children = (
+				7080D720191C139700DC4040 /* Resources */,
+				7080D6F6191C0ACD00DC4040 /* ELAppDelegate.h */,
+				7080D6F7191C0ACD00DC4040 /* ELAppDelegate.m */,
+				7080D6F9191C0ACD00DC4040 /* Main.storyboard */,
+				7080D6FC191C0ACD00DC4040 /* ELFirstViewController.h */,
+				7080D6FD191C0ACD00DC4040 /* ELFirstViewController.m */,
+				7080D6FF191C0ACD00DC4040 /* ELSecondViewController.h */,
+				7080D700191C0ACD00DC4040 /* ELSecondViewController.m */,
+				7080D702191C0ACD00DC4040 /* Images.xcassets */,
+				7080D6EE191C0ACD00DC4040 /* Supporting Files */,
+			);
+			path = EspressoLane;
+			sourceTree = "<group>";
+		};
+		7080D6EE191C0ACD00DC4040 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7080D6EF191C0ACD00DC4040 /* EspressoLane-Info.plist */,
+				7080D6F0191C0ACD00DC4040 /* InfoPlist.strings */,
+				7080D6F3191C0ACD00DC4040 /* main.m */,
+				7080D6F5191C0ACD00DC4040 /* EspressoLane-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7080D70F191C0ACD00DC4040 /* EspressoLaneTests */ = {
+			isa = PBXGroup;
+			children = (
+				7080D715191C0ACD00DC4040 /* EspressoLaneTests.m */,
+				7080D710191C0ACD00DC4040 /* Supporting Files */,
+			);
+			path = EspressoLaneTests;
+			sourceTree = "<group>";
+		};
+		7080D710191C0ACD00DC4040 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7080D711191C0ACD00DC4040 /* EspressoLaneTests-Info.plist */,
+				7080D712191C0ACD00DC4040 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7080D720191C139700DC4040 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7080D723191C13C500DC4040 /* espresso_logo.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7080D6E3191C0ACD00DC4040 /* EspressoLane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7080D719191C0ACD00DC4040 /* Build configuration list for PBXNativeTarget "EspressoLane" */;
+			buildPhases = (
+				7080D6E0191C0ACD00DC4040 /* Sources */,
+				7080D6E1191C0ACD00DC4040 /* Frameworks */,
+				7080D6E2191C0ACD00DC4040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EspressoLane;
+			productName = EspressoLane;
+			productReference = 7080D6E4191C0ACD00DC4040 /* EspressoLane.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7080D707191C0ACD00DC4040 /* EspressoLaneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7080D71C191C0ACD00DC4040 /* Build configuration list for PBXNativeTarget "EspressoLaneTests" */;
+			buildPhases = (
+				7080D704191C0ACD00DC4040 /* Sources */,
+				7080D705191C0ACD00DC4040 /* Frameworks */,
+				7080D706191C0ACD00DC4040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7080D70E191C0ACD00DC4040 /* PBXTargetDependency */,
+			);
+			name = EspressoLaneTests;
+			productName = EspressoLaneTests;
+			productReference = 7080D708191C0ACD00DC4040 /* EspressoLaneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7080D6DC191C0ACD00DC4040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = abu;
+				TargetAttributes = {
+					7080D707191C0ACD00DC4040 = {
+						TestTargetID = 7080D6E3191C0ACD00DC4040;
+					};
+				};
+			};
+			buildConfigurationList = 7080D6DF191C0ACD00DC4040 /* Build configuration list for PBXProject "EspressoLane" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7080D6DB191C0ACD00DC4040;
+			productRefGroup = 7080D6E5191C0ACD00DC4040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7080D6E3191C0ACD00DC4040 /* EspressoLane */,
+				7080D707191C0ACD00DC4040 /* EspressoLaneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7080D6E2191C0ACD00DC4040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7080D724191C13C500DC4040 /* espresso_logo.png in Resources */,
+				7080D703191C0ACD00DC4040 /* Images.xcassets in Resources */,
+				7080D6F2191C0ACD00DC4040 /* InfoPlist.strings in Resources */,
+				7080D6FB191C0ACD00DC4040 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7080D706191C0ACD00DC4040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7080D714191C0ACD00DC4040 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7080D6E0191C0ACD00DC4040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7080D6F4191C0ACD00DC4040 /* main.m in Sources */,
+				7080D6FE191C0ACD00DC4040 /* ELFirstViewController.m in Sources */,
+				7080D6F8191C0ACD00DC4040 /* ELAppDelegate.m in Sources */,
+				7080D701191C0ACD00DC4040 /* ELSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7080D704191C0ACD00DC4040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7080D716191C0ACD00DC4040 /* EspressoLaneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7080D70E191C0ACD00DC4040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7080D6E3191C0ACD00DC4040 /* EspressoLane */;
+			targetProxy = 7080D70D191C0ACD00DC4040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7080D6F0191C0ACD00DC4040 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7080D6F1191C0ACD00DC4040 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7080D6F9191C0ACD00DC4040 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7080D6FA191C0ACD00DC4040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7080D712191C0ACD00DC4040 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7080D713191C0ACD00DC4040 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7080D717191C0ACD00DC4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7080D718191C0ACD00DC4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7080D71A191C0ACD00DC4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoLane/EspressoLane-Prefix.pch";
+				INFOPLIST_FILE = "EspressoLane/EspressoLane-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7080D71B191C0ACD00DC4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoLane/EspressoLane-Prefix.pch";
+				INFOPLIST_FILE = "EspressoLane/EspressoLane-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7080D71D191C0ACD00DC4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EspressoLane.app/EspressoLane";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoLane/EspressoLane-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EspressoLaneTests/EspressoLaneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7080D71E191C0ACD00DC4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EspressoLane.app/EspressoLane";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EspressoLane/EspressoLane-Prefix.pch";
+				INFOPLIST_FILE = "EspressoLaneTests/EspressoLaneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7080D6DF191C0ACD00DC4040 /* Build configuration list for PBXProject "EspressoLane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7080D717191C0ACD00DC4040 /* Debug */,
+				7080D718191C0ACD00DC4040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7080D719191C0ACD00DC4040 /* Build configuration list for PBXNativeTarget "EspressoLane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7080D71A191C0ACD00DC4040 /* Debug */,
+				7080D71B191C0ACD00DC4040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7080D71C191C0ACD00DC4040 /* Build configuration list for PBXNativeTarget "EspressoLaneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7080D71D191C0ACD00DC4040 /* Debug */,
+				7080D71E191C0ACD00DC4040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7080D6DC191C0ACD00DC4040 /* Project object */;
+}
