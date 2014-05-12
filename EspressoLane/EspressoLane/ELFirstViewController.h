@@ -16,4 +16,5 @@
 @property (nonatomic,weak) IBOutlet UITextField *franchiseeField;
 @property (nonatomic,weak) IBOutlet UITextField *cupCountOneField;
 @property (nonatomic,weak) IBOutlet UITextField *cupCountTwoField;
+-(IBAction)submitButtonPressed:(id)sender;
 @end

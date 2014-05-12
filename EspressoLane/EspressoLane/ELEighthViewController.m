@@ -1,51 +1,85 @@
 //
-//  ELSecondViewController.m
+//  ELEighthViewController.m
 //  EspressoLane
 //
-//  Created by Abu on 09/05/14.
+//  Created by Abu on 11/05/14.
 //  Copyright (c) 2014 abu. All rights reserved.
 //
 
-#import "ELSecondViewController.h"
-
+#import "ELEighthViewController.h"
 #define kOFFSET_FOR_KEYBOARD 280
 
-@interface ELSecondViewController ()
-@property BOOL keyboardShown;
+@interface ELEighthViewController ()
 @property BOOL movedUp;
+@property (nonatomic,strong) UIButton *selectedCameraButton;
 @end
 
-@implementation ELSecondViewController
+@implementation ELEighthViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    for (UIView *view in [self.view subviews]) {
-        for (UIView *subview in [view subviews]){
+    // Do any additional setup after loading the view.
+    for (UIView *subview in [self.view subviews]){
         if ([subview isKindOfClass:[UITextField class]]) {
             UITextField *textField = (UITextField *)subview;
             textField.delegate = self;
         }
     }
-    }
-    _keyboardShown = NO;
     _movedUp = NO;
 }
 
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-/*    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-    
-   */ [[NSNotificationCenter defaultCenter] addObserver:self
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(keyboardWillShow:)
+//                                                 name:UIKeyboardWillShowNotification
+//                                               object:nil];
+//    
+    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillHide)
                                                  name:UIKeyboardWillHideNotification
-                                               object:nil];/**/
+                                               object:nil];
+    //[[NSNotificationCenter defaultCenter]postNotificationName:@"SUBMIT_PRESSED" object:nil];
+    for (UIView *view in [self.view subviews]) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            
+            UIButton *button = (UIButton *)view;
+            [button addTarget:self action:@selector(cameraButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        }
+    }
     //[[NSNotificationCenter defaultCenter]postNotificationName:@"SUBMIT_PRESSED" object:nil];
 }
+
+
+-(IBAction)cameraButtonPressed:(id)sender{
+    self.selectedCameraButton = (UIButton *)sender;
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.allowsEditing = NO;
+    picker.sourceType =  UIImagePickerControllerSourceTypeCamera ;
+    picker.delegate = self;
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    [self.selectedCameraButton setBackgroundImage:image forState:UIControlStateNormal];
+    [self.selectedCameraButton setBackgroundImage:image forState:UIControlStateSelected];
+    [self dismissModalViewControllerAnimated:YES];
+    
+}
+
 
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -66,7 +100,6 @@
 
 -(void)keyboardWillShow:(NSNotification *)notification {
     // Animate the current view out of the way
-    _keyboardShown = YES;
     if (self.view.frame.origin.y >= 0)
     {
         [self setViewMovedUp:YES];
@@ -75,6 +108,7 @@
     {
         [self setViewMovedUp:NO];
     }
+    _movedUp = YES;
 }
 
 -(void)keyboardWillHide {
@@ -86,11 +120,9 @@
 //    {
 //        [self setViewMovedUp:NO];
 //    }
-
-    if (_movedUp && _keyboardShown) {
+    if (_movedUp) {
         [self setViewMovedUp:NO];
     }
-    _keyboardShown = NO;
     _movedUp = NO;
 }
 
@@ -117,58 +149,20 @@
     self.view.frame = rect;
     
     [UIView commitAnimations];
-    _movedUp = YES;
 }
 
-#pragma mark -- TextField Delegate
-
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
-    
-    if ((textField.frame.origin.y + [textField superview].frame.origin.y)>=(self.machineTwoSpeedView.frame.origin.y + self.machineTwoSpeedCommentsField.frame.origin.y)) {
-        if (_keyboardShown) {
+    if (textField.frame.origin.y >= self.marginalField.frame.origin.y) {
+        if (_movedUp) {
             return YES;
         }
         [self keyboardWillShow:nil];
     }
     
+    
     return YES;
 }
 
-//-(void)textFieldDidEndEditing:(UITextField *)textField{
-//    if ((textField.frame.origin.y + [textField superview].frame.origin.y)>(self.machineTwoSpeedView.frame.origin.y + self.machineTwoSpeedCommentsField.frame.origin.y)) {
-//        if (_keyboardShown) {
-//            [self keyboardWillHide];
-//            
-//        }
-//    }
-//    
-//    [textField resignFirstResponder];
-//}
-
-//
-//-(BOOL)textFieldShouldEndEditing:(UITextField *)textField{
-//    if (_movedUp) {
-//        if (_keyboardShown) {
-//            [self keyboardWillHide];
-//            
-//        }
-//    }
-//    
-//    [textField resignFirstResponder];
-//    return YES;
-//
-//}
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-//    if (_movedUp) {
-//        if (_keyboardShown) {
-//            [self keyboardWillHide];
-//
-//        }
-//    }
-
-    [textField resignFirstResponder];
-    return YES;
-}
 
 - (NSUInteger)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskLandscape;
@@ -180,5 +174,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

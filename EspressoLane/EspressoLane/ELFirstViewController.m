@@ -7,6 +7,7 @@
 //
 
 #import "ELFirstViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define kOFFSET_FOR_KEYBOARD 250
 @interface ELFirstViewController ()
@@ -19,6 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -33,6 +35,7 @@
                                              selector:@selector(keyboardWillHide)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+    
 }
 
 
@@ -136,6 +139,47 @@
     
     return YES;
 }
+
+
+#pragma mark
+#pragma mark -- IBActions
+
+-(IBAction)submitButtonPressed:(id)sender{
+    
+
+    // Creates a mutable data object for updating with binary data, like a byte array
+    NSMutableData *pdfData = [NSMutableData data];
+    
+    // Points the pdf converter to the mutable data object and to the UIView to be converted
+    UIGraphicsBeginPDFContextToData(pdfData, self.view.bounds, nil);
+    UIGraphicsBeginPDFPage();
+    CGContextRef pdfContext = UIGraphicsGetCurrentContext();
+    
+    NSString *fileName = @"espresso3.pdf";
+    // draws rect to the view and thus this is captured by UIGraphicsBeginPDFContextToData
+    
+    [self.view.layer renderInContext:pdfContext];
+    
+    
+    // remove PDF rendering context
+    UIGraphicsEndPDFContext();
+    
+    // Retrieves the document directories from the iOS device
+    NSArray* documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
+    
+    NSString* documentDirectory = [documentDirectories objectAtIndex:0];
+    NSString* documentDirectoryFilename = [documentDirectory stringByAppendingPathComponent:fileName];
+    
+    // instructs the mutable data object to write its context to a file on disk
+    [pdfData writeToFile:documentDirectoryFilename atomically:YES];
+    NSLog(@"documentDirectoryFileName: %@",documentDirectoryFilename);
+}
+
+
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscapeLeft;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

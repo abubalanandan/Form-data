@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		702C9130191FF1F800DED60B /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C912F191FF1F800DED60B /* camera.png */; };
+		702C9132191FFA9800DED60B /* camera_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C9131191FFA9800DED60B /* camera_small.png */; };
+		702C9134191FFBB200DED60B /* camera_tiny.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C9133191FFBB200DED60B /* camera_tiny.png */; };
+		702C9136191FFC6700DED60B /* camera_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C9135191FFC6700DED60B /* camera_big.png */; };
+		702C913C1920087400DED60B /* ELImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702C913B1920087400DED60B /* ELImagePickerController.m */; };
+		705CC6CF191F72820076FAC7 /* ELThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6CE191F72820076FAC7 /* ELThirdViewController.m */; };
+		705CC6D2191F78610076FAC7 /* ELConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6D1191F78610076FAC7 /* ELConstants.m */; };
+		705CC6D5191F7AF90076FAC7 /* ELFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6D4191F7AF90076FAC7 /* ELFourthViewController.m */; };
+		705CC6D8191F7DE00076FAC7 /* ELFifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6D7191F7DE00076FAC7 /* ELFifthViewController.m */; };
+		705CC6DB191F7FF80076FAC7 /* ELSeventhViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6DA191F7FF80076FAC7 /* ELSeventhViewController.m */; };
+		705CC6DE191F83610076FAC7 /* ELEighthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6DD191F83610076FAC7 /* ELEighthViewController.m */; };
+		705CC6E1191F86BB0076FAC7 /* ELNinthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6E0191F86BB0076FAC7 /* ELNinthViewController.m */; };
+		705CC6E4191F88A00076FAC7 /* ELTenthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6E3191F88A00076FAC7 /* ELTenthViewController.m */; };
+		705CC6E7191F8A380076FAC7 /* ELEleventhViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6E6191F8A380076FAC7 /* ELEleventhViewController.m */; };
+		705CC6EA191F8BE30076FAC7 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6E9191F8BE30076FAC7 /* CustomButton.m */; };
+		705CC6ED191F8CE90076FAC7 /* ELTwelfthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6EC191F8CE90076FAC7 /* ELTwelfthViewController.m */; };
+		705CC6EF191FA4FC0076FAC7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705CC6EE191FA4FC0076FAC7 /* MessageUI.framework */; };
 		7080D6E8191C0ACD00DC4040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6E7191C0ACD00DC4040 /* Foundation.framework */; };
 		7080D6EA191C0ACD00DC4040 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6E9191C0ACD00DC4040 /* CoreGraphics.framework */; };
 		7080D6EC191C0ACD00DC4040 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7080D6EB191C0ACD00DC4040 /* UIKit.framework */; };
@@ -23,6 +40,10 @@
 		7080D714191C0ACD00DC4040 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7080D712191C0ACD00DC4040 /* InfoPlist.strings */; };
 		7080D716191C0ACD00DC4040 /* EspressoLaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080D715191C0ACD00DC4040 /* EspressoLaneTests.m */; };
 		7080D724191C13C500DC4040 /* espresso_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7080D723191C13C500DC4040 /* espresso_logo.png */; };
+		709E1DFF191C205F005CFA69 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709E1DFE191C205F005CFA69 /* QuartzCore.framework */; };
+		70F380A7191EC8ED00B054BB /* ELRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F380A6191EC8ED00B054BB /* ELRowView.m */; };
+		70F380A9191EC91400B054BB /* ELRowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F380A8191EC91400B054BB /* ELRowView.xib */; };
+		70F380AB191ECBAF00B054BB /* border.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F380AA191ECBAF00B054BB /* border.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +57,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		702C912F191FF1F800DED60B /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = ../../../../../Downloads/camera.png; sourceTree = "<group>"; };
+		702C9131191FFA9800DED60B /* camera_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_small.png; path = ../../../../../Downloads/camera_small.png; sourceTree = "<group>"; };
+		702C9133191FFBB200DED60B /* camera_tiny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_tiny.png; path = ../../../../../Downloads/camera_tiny.png; sourceTree = "<group>"; };
+		702C9135191FFC6700DED60B /* camera_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_big.png; path = ../../../../../Downloads/camera_big.png; sourceTree = "<group>"; };
+		702C913A1920087400DED60B /* ELImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELImagePickerController.h; sourceTree = "<group>"; };
+		702C913B1920087400DED60B /* ELImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELImagePickerController.m; sourceTree = "<group>"; };
+		705CC6CD191F72820076FAC7 /* ELThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELThirdViewController.h; sourceTree = "<group>"; };
+		705CC6CE191F72820076FAC7 /* ELThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELThirdViewController.m; sourceTree = "<group>"; };
+		705CC6D0191F78610076FAC7 /* ELConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELConstants.h; sourceTree = "<group>"; };
+		705CC6D1191F78610076FAC7 /* ELConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELConstants.m; sourceTree = "<group>"; };
+		705CC6D3191F7AF90076FAC7 /* ELFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFourthViewController.h; sourceTree = "<group>"; };
+		705CC6D4191F7AF90076FAC7 /* ELFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFourthViewController.m; sourceTree = "<group>"; };
+		705CC6D6191F7DE00076FAC7 /* ELFifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFifthViewController.h; sourceTree = "<group>"; };
+		705CC6D7191F7DE00076FAC7 /* ELFifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFifthViewController.m; sourceTree = "<group>"; };
+		705CC6D9191F7FF80076FAC7 /* ELSeventhViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELSeventhViewController.h; sourceTree = "<group>"; };
+		705CC6DA191F7FF80076FAC7 /* ELSeventhViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELSeventhViewController.m; sourceTree = "<group>"; };
+		705CC6DC191F83610076FAC7 /* ELEighthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELEighthViewController.h; sourceTree = "<group>"; };
+		705CC6DD191F83610076FAC7 /* ELEighthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELEighthViewController.m; sourceTree = "<group>"; };
+		705CC6DF191F86BB0076FAC7 /* ELNinthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELNinthViewController.h; sourceTree = "<group>"; };
+		705CC6E0191F86BB0076FAC7 /* ELNinthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELNinthViewController.m; sourceTree = "<group>"; };
+		705CC6E2191F88A00076FAC7 /* ELTenthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTenthViewController.h; sourceTree = "<group>"; };
+		705CC6E3191F88A00076FAC7 /* ELTenthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTenthViewController.m; sourceTree = "<group>"; };
+		705CC6E5191F8A380076FAC7 /* ELEleventhViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELEleventhViewController.h; sourceTree = "<group>"; };
+		705CC6E6191F8A380076FAC7 /* ELEleventhViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELEleventhViewController.m; sourceTree = "<group>"; };
+		705CC6E8191F8BE30076FAC7 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		705CC6E9191F8BE30076FAC7 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		705CC6EB191F8CE90076FAC7 /* ELTwelfthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELTwelfthViewController.h; sourceTree = "<group>"; };
+		705CC6EC191F8CE90076FAC7 /* ELTwelfthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELTwelfthViewController.m; sourceTree = "<group>"; };
+		705CC6EE191FA4FC0076FAC7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		7080D6E4191C0ACD00DC4040 /* EspressoLane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EspressoLane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7080D6E7191C0ACD00DC4040 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7080D6E9191C0ACD00DC4040 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +108,11 @@
 		7080D713191C0ACD00DC4040 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7080D715191C0ACD00DC4040 /* EspressoLaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspressoLaneTests.m; sourceTree = "<group>"; };
 		7080D723191C13C500DC4040 /* espresso_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = espresso_logo.png; sourceTree = "<group>"; };
+		709E1DFE191C205F005CFA69 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		70F380A5191EC8ED00B054BB /* ELRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELRowView.h; sourceTree = "<group>"; };
+		70F380A6191EC8ED00B054BB /* ELRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRowView.m; sourceTree = "<group>"; };
+		70F380A8191EC91400B054BB /* ELRowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELRowView.xib; sourceTree = "<group>"; };
+		70F380AA191ECBAF00B054BB /* border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705CC6EF191FA4FC0076FAC7 /* MessageUI.framework in Frameworks */,
+				709E1DFF191C205F005CFA69 /* QuartzCore.framework in Frameworks */,
 				7080D6EA191C0ACD00DC4040 /* CoreGraphics.framework in Frameworks */,
 				7080D6EC191C0ACD00DC4040 /* UIKit.framework in Frameworks */,
 				7080D6E8191C0ACD00DC4040 /* Foundation.framework in Frameworks */,
@@ -87,6 +144,8 @@
 		7080D6DB191C0ACD00DC4040 = {
 			isa = PBXGroup;
 			children = (
+				702C913A1920087400DED60B /* ELImagePickerController.h */,
+				702C913B1920087400DED60B /* ELImagePickerController.m */,
 				7080D6ED191C0ACD00DC4040 /* EspressoLane */,
 				7080D70F191C0ACD00DC4040 /* EspressoLaneTests */,
 				7080D6E6191C0ACD00DC4040 /* Frameworks */,
@@ -106,6 +165,8 @@
 		7080D6E6191C0ACD00DC4040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				705CC6EE191FA4FC0076FAC7 /* MessageUI.framework */,
+				709E1DFE191C205F005CFA69 /* QuartzCore.framework */,
 				7080D6E7191C0ACD00DC4040 /* Foundation.framework */,
 				7080D6E9191C0ACD00DC4040 /* CoreGraphics.framework */,
 				7080D6EB191C0ACD00DC4040 /* UIKit.framework */,
@@ -121,12 +182,38 @@
 				7080D6F6191C0ACD00DC4040 /* ELAppDelegate.h */,
 				7080D6F7191C0ACD00DC4040 /* ELAppDelegate.m */,
 				7080D6F9191C0ACD00DC4040 /* Main.storyboard */,
+				705CC6EB191F8CE90076FAC7 /* ELTwelfthViewController.h */,
+				705CC6EC191F8CE90076FAC7 /* ELTwelfthViewController.m */,
+				705CC6E5191F8A380076FAC7 /* ELEleventhViewController.h */,
+				705CC6E6191F8A380076FAC7 /* ELEleventhViewController.m */,
+				705CC6E2191F88A00076FAC7 /* ELTenthViewController.h */,
+				705CC6E3191F88A00076FAC7 /* ELTenthViewController.m */,
+				705CC6DF191F86BB0076FAC7 /* ELNinthViewController.h */,
+				705CC6E0191F86BB0076FAC7 /* ELNinthViewController.m */,
+				705CC6DC191F83610076FAC7 /* ELEighthViewController.h */,
+				705CC6DD191F83610076FAC7 /* ELEighthViewController.m */,
+				705CC6D9191F7FF80076FAC7 /* ELSeventhViewController.h */,
+				705CC6DA191F7FF80076FAC7 /* ELSeventhViewController.m */,
+				705CC6D6191F7DE00076FAC7 /* ELFifthViewController.h */,
+				705CC6D7191F7DE00076FAC7 /* ELFifthViewController.m */,
+				705CC6CD191F72820076FAC7 /* ELThirdViewController.h */,
+				705CC6CE191F72820076FAC7 /* ELThirdViewController.m */,
 				7080D6FC191C0ACD00DC4040 /* ELFirstViewController.h */,
 				7080D6FD191C0ACD00DC4040 /* ELFirstViewController.m */,
+				705CC6D3191F7AF90076FAC7 /* ELFourthViewController.h */,
+				705CC6D4191F7AF90076FAC7 /* ELFourthViewController.m */,
+				70F380A5191EC8ED00B054BB /* ELRowView.h */,
+				70F380A6191EC8ED00B054BB /* ELRowView.m */,
+				70F380A8191EC91400B054BB /* ELRowView.xib */,
+				70F380AA191ECBAF00B054BB /* border.png */,
 				7080D6FF191C0ACD00DC4040 /* ELSecondViewController.h */,
 				7080D700191C0ACD00DC4040 /* ELSecondViewController.m */,
 				7080D702191C0ACD00DC4040 /* Images.xcassets */,
 				7080D6EE191C0ACD00DC4040 /* Supporting Files */,
+				705CC6D0191F78610076FAC7 /* ELConstants.h */,
+				705CC6D1191F78610076FAC7 /* ELConstants.m */,
+				705CC6E8191F8BE30076FAC7 /* CustomButton.h */,
+				705CC6E9191F8BE30076FAC7 /* CustomButton.m */,
 			);
 			path = EspressoLane;
 			sourceTree = "<group>";
@@ -163,7 +250,11 @@
 		7080D720191C139700DC4040 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				702C9135191FFC6700DED60B /* camera_big.png */,
+				702C9133191FFBB200DED60B /* camera_tiny.png */,
+				702C9131191FFA9800DED60B /* camera_small.png */,
 				7080D723191C13C500DC4040 /* espresso_logo.png */,
+				702C912F191FF1F800DED60B /* camera.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -246,6 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7080D724191C13C500DC4040 /* espresso_logo.png in Resources */,
+				70F380AB191ECBAF00B054BB /* border.png in Resources */,
+				702C9134191FFBB200DED60B /* camera_tiny.png in Resources */,
+				702C9136191FFC6700DED60B /* camera_big.png in Resources */,
+				70F380A9191EC91400B054BB /* ELRowView.xib in Resources */,
+				702C9130191FF1F800DED60B /* camera.png in Resources */,
+				702C9132191FFA9800DED60B /* camera_small.png in Resources */,
 				7080D703191C0ACD00DC4040 /* Images.xcassets in Resources */,
 				7080D6F2191C0ACD00DC4040 /* InfoPlist.strings in Resources */,
 				7080D6FB191C0ACD00DC4040 /* Main.storyboard in Resources */,
@@ -267,10 +364,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705CC6E7191F8A380076FAC7 /* ELEleventhViewController.m in Sources */,
+				705CC6D2191F78610076FAC7 /* ELConstants.m in Sources */,
+				702C913C1920087400DED60B /* ELImagePickerController.m in Sources */,
+				705CC6ED191F8CE90076FAC7 /* ELTwelfthViewController.m in Sources */,
 				7080D6F4191C0ACD00DC4040 /* main.m in Sources */,
+				70F380A7191EC8ED00B054BB /* ELRowView.m in Sources */,
+				705CC6D5191F7AF90076FAC7 /* ELFourthViewController.m in Sources */,
 				7080D6FE191C0ACD00DC4040 /* ELFirstViewController.m in Sources */,
+				705CC6EA191F8BE30076FAC7 /* CustomButton.m in Sources */,
+				705CC6DB191F7FF80076FAC7 /* ELSeventhViewController.m in Sources */,
+				705CC6CF191F72820076FAC7 /* ELThirdViewController.m in Sources */,
+				705CC6E1191F86BB0076FAC7 /* ELNinthViewController.m in Sources */,
+				705CC6D8191F7DE00076FAC7 /* ELFifthViewController.m in Sources */,
 				7080D6F8191C0ACD00DC4040 /* ELAppDelegate.m in Sources */,
 				7080D701191C0ACD00DC4040 /* ELSecondViewController.m in Sources */,
+				705CC6DE191F83610076FAC7 /* ELEighthViewController.m in Sources */,
+				705CC6E4191F88A00076FAC7 /* ELTenthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +587,7 @@
 				7080D71B191C0ACD00DC4040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7080D71C191C0ACD00DC4040 /* Build configuration list for PBXNativeTarget "EspressoLaneTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +596,7 @@
 				7080D71E191C0ACD00DC4040 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

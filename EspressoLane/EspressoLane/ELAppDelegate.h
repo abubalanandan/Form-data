@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ELFirstViewController.h"
+#import "ELThirdViewController.h"
+#import "ELTwelfthViewController.h"
 
-@interface ELAppDelegate : UIResponder <UIApplicationDelegate>
+#import <MessageUI/MFMailComposeViewController.h>
+
+
+
+@interface ELAppDelegate : UIResponder <UIApplicationDelegate,MFMailComposeViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) ELFirstViewController *firstViewController;
+@property (strong,nonatomic) ELThirdViewController *thirdViewController;
+@property (strong,nonatomic) ELTwelfthViewController *twelfthViewController;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 @end
+
+
