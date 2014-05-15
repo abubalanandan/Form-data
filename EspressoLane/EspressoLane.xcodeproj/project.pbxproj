@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		702C9130191FF1F800DED60B /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C912F191FF1F800DED60B /* camera.png */; };
-		702C9132191FFA9800DED60B /* camera_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C9131191FFA9800DED60B /* camera_small.png */; };
-		702C9134191FFBB200DED60B /* camera_tiny.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C9133191FFBB200DED60B /* camera_tiny.png */; };
-		702C9136191FFC6700DED60B /* camera_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 702C9135191FFC6700DED60B /* camera_big.png */; };
 		702C913C1920087400DED60B /* ELImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702C913B1920087400DED60B /* ELImagePickerController.m */; };
 		705CC6CF191F72820076FAC7 /* ELThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6CE191F72820076FAC7 /* ELThirdViewController.m */; };
 		705CC6D2191F78610076FAC7 /* ELConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 705CC6D1191F78610076FAC7 /* ELConstants.m */; };
@@ -40,6 +36,10 @@
 		7080D714191C0ACD00DC4040 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7080D712191C0ACD00DC4040 /* InfoPlist.strings */; };
 		7080D716191C0ACD00DC4040 /* EspressoLaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7080D715191C0ACD00DC4040 /* EspressoLaneTests.m */; };
 		7080D724191C13C500DC4040 /* espresso_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7080D723191C13C500DC4040 /* espresso_logo.png */; };
+		709DD8C019253BBF00D12220 /* camera_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 709DD8BC19253BBF00D12220 /* camera_big.png */; };
+		709DD8C119253BBF00D12220 /* camera_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 709DD8BD19253BBF00D12220 /* camera_small.png */; };
+		709DD8C219253BBF00D12220 /* camera_tiny.png in Resources */ = {isa = PBXBuildFile; fileRef = 709DD8BE19253BBF00D12220 /* camera_tiny.png */; };
+		709DD8C319253BBF00D12220 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 709DD8BF19253BBF00D12220 /* camera.png */; };
 		709E1DFF191C205F005CFA69 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709E1DFE191C205F005CFA69 /* QuartzCore.framework */; };
 		70F380A7191EC8ED00B054BB /* ELRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F380A6191EC8ED00B054BB /* ELRowView.m */; };
 		70F380A9191EC91400B054BB /* ELRowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F380A8191EC91400B054BB /* ELRowView.xib */; };
@@ -57,10 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		702C912F191FF1F800DED60B /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = ../../../../../Downloads/camera.png; sourceTree = "<group>"; };
-		702C9131191FFA9800DED60B /* camera_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_small.png; path = ../../../../../Downloads/camera_small.png; sourceTree = "<group>"; };
-		702C9133191FFBB200DED60B /* camera_tiny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_tiny.png; path = ../../../../../Downloads/camera_tiny.png; sourceTree = "<group>"; };
-		702C9135191FFC6700DED60B /* camera_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera_big.png; path = ../../../../../Downloads/camera_big.png; sourceTree = "<group>"; };
 		702C913A1920087400DED60B /* ELImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELImagePickerController.h; sourceTree = "<group>"; };
 		702C913B1920087400DED60B /* ELImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELImagePickerController.m; sourceTree = "<group>"; };
 		705CC6CD191F72820076FAC7 /* ELThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELThirdViewController.h; sourceTree = "<group>"; };
@@ -108,6 +104,10 @@
 		7080D713191C0ACD00DC4040 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7080D715191C0ACD00DC4040 /* EspressoLaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspressoLaneTests.m; sourceTree = "<group>"; };
 		7080D723191C13C500DC4040 /* espresso_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = espresso_logo.png; sourceTree = "<group>"; };
+		709DD8BC19253BBF00D12220 /* camera_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_big.png; sourceTree = "<group>"; };
+		709DD8BD19253BBF00D12220 /* camera_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_small.png; sourceTree = "<group>"; };
+		709DD8BE19253BBF00D12220 /* camera_tiny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_tiny.png; sourceTree = "<group>"; };
+		709DD8BF19253BBF00D12220 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		709E1DFE191C205F005CFA69 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		70F380A5191EC8ED00B054BB /* ELRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELRowView.h; sourceTree = "<group>"; };
 		70F380A6191EC8ED00B054BB /* ELRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELRowView.m; sourceTree = "<group>"; };
@@ -250,11 +250,11 @@
 		7080D720191C139700DC4040 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				702C9135191FFC6700DED60B /* camera_big.png */,
-				702C9133191FFBB200DED60B /* camera_tiny.png */,
-				702C9131191FFA9800DED60B /* camera_small.png */,
+				709DD8BC19253BBF00D12220 /* camera_big.png */,
+				709DD8BD19253BBF00D12220 /* camera_small.png */,
+				709DD8BE19253BBF00D12220 /* camera_tiny.png */,
+				709DD8BF19253BBF00D12220 /* camera.png */,
 				7080D723191C13C500DC4040 /* espresso_logo.png */,
-				702C912F191FF1F800DED60B /* camera.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -338,14 +338,14 @@
 			files = (
 				7080D724191C13C500DC4040 /* espresso_logo.png in Resources */,
 				70F380AB191ECBAF00B054BB /* border.png in Resources */,
-				702C9134191FFBB200DED60B /* camera_tiny.png in Resources */,
-				702C9136191FFC6700DED60B /* camera_big.png in Resources */,
 				70F380A9191EC91400B054BB /* ELRowView.xib in Resources */,
-				702C9130191FF1F800DED60B /* camera.png in Resources */,
-				702C9132191FFA9800DED60B /* camera_small.png in Resources */,
+				709DD8C019253BBF00D12220 /* camera_big.png in Resources */,
+				709DD8C319253BBF00D12220 /* camera.png in Resources */,
+				709DD8C119253BBF00D12220 /* camera_small.png in Resources */,
 				7080D703191C0ACD00DC4040 /* Images.xcassets in Resources */,
 				7080D6F2191C0ACD00DC4040 /* InfoPlist.strings in Resources */,
 				7080D6FB191C0ACD00DC4040 /* Main.storyboard in Resources */,
+				709DD8C219253BBF00D12220 /* camera_tiny.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
